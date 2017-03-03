@@ -72,10 +72,14 @@ class sampleUItestUITests: XCTestCase {
             }
         }
         
+        if app.alerts["title"].exists {
+            app.alerts["title"].buttons["cancel"].tap()
+        }
+
+        
         //  let systemSoundID: SystemSoundID = 1016
         //  AudioServicesPlaySystemSound (systemSoundID)
         
-        sleep(10)
         
     }
     func testABCR() {
@@ -98,8 +102,12 @@ class sampleUItestUITests: XCTestCase {
             
         }
         
+        if app.alerts["title"].exists {
+            app.alerts["title"].buttons["cancel"].tap()
+        }
+
         
-        sleep(100)
+        
     }
     
     func testExample() {
@@ -117,13 +125,16 @@ class sampleUItestUITests: XCTestCase {
         
         
         let alerts = app.alerts["hfg"]
-        self.waitIfElementMayAppear(alerts, timeout: 1200)
+       // self.waitIfElementMayAppear(alerts, timeout: 5)
         
         if alerts.exists == true {
-            
+            if app.alerts["title"].exists {
+                app.alerts["title"].buttons["cancel"].tap()
+            }
+
         }
         else {
-            self.waitIfElementMayAppear(app.alerts["title"], timeout: 120)
+          //  self.waitIfElementMayAppear(app.alerts["title"], timeout: 7)
             if app.alerts["title"].exists {
                 app.alerts["title"].buttons["cancel"].tap()
             }
