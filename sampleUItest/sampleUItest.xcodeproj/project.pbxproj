@@ -194,18 +194,18 @@
 					84B04DB71E68671F001C5C16 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = TFU2WWZ8G7;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					84B04DCB1E686725001C5C16 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = TFU2WWZ8G7;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 84B04DB71E68671F001C5C16;
 					};
 					84B04DD61E686726001C5C16 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = TFU2WWZ8G7;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 84B04DB71E68671F001C5C16;
 					};
 				};
@@ -358,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -403,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -420,8 +420,10 @@
 				DEVELOPMENT_TEAM = TFU2WWZ8G7;
 				INFOPLIST_FILE = sampleUItest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.byteridge.sampleUItest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.byteridge.GeenHouseCITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "07fce8ba-0f17-4683-99cb-e3902cb203e9";
+				PROVISIONING_PROFILE_SPECIFIER = GeenHouseCITest;
 				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
@@ -433,8 +435,10 @@
 				DEVELOPMENT_TEAM = TFU2WWZ8G7;
 				INFOPLIST_FILE = sampleUItest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.byteridge.sampleUItest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.byteridge.GeenHouseCITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "07fce8ba-0f17-4683-99cb-e3902cb203e9";
+				PROVISIONING_PROFILE_SPECIFIER = GeenHouseCITest;
 				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
@@ -444,6 +448,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = TFU2WWZ8G7;
 				INFOPLIST_FILE = sampleUItestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -478,6 +483,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.byteridge.sampleUItestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4184aa10-ac35-4f21-8acd-eaefae819fc7";
+				PROVISIONING_PROFILE_SPECIFIER = ByteridgeGeneric;
 				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = sampleUItest;
 			};
@@ -492,6 +499,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.byteridge.sampleUItestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4184aa10-ac35-4f21-8acd-eaefae819fc7";
+				PROVISIONING_PROFILE_SPECIFIER = ByteridgeGeneric;
 				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = sampleUItest;
 			};
@@ -516,6 +525,7 @@
 				84B04DE21E686726001C5C16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84B04DE31E686726001C5C16 /* Build configuration list for PBXNativeTarget "sampleUItestTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +534,7 @@
 				84B04DE51E686726001C5C16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84B04DE61E686726001C5C16 /* Build configuration list for PBXNativeTarget "sampleUItestUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +543,7 @@
 				84B04DE81E686726001C5C16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
