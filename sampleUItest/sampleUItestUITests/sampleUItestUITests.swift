@@ -46,7 +46,7 @@ class sampleUItestUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    func testLabel() {
+  /*  func testLabel() {
         let app = XCUIApplication()
         let label = app.staticTexts["status"]
         if let value = label.value as? String {
@@ -57,7 +57,7 @@ class sampleUItestUITests: XCTestCase {
         if let value2 = label.value as? String {
             
         }
-    }
+    } */
     func testEx() {
         
         let app = XCUIApplication()
@@ -82,7 +82,7 @@ class sampleUItestUITests: XCTestCase {
         
         
     }
-    func testABCR() {
+  /*  func testABCR() {
         let text = "byteridge"
         let app = XCUIApplication()
         var field : XCUIElement
@@ -117,7 +117,7 @@ class sampleUItestUITests: XCTestCase {
         //   let systemSoundID: SystemSoundID = 1016
         //     AudioServicesPlaySystemSound (systemSoundID)
         
-        
+        sleep(2)
         
         
         let app = XCUIApplication()
@@ -147,7 +147,7 @@ class sampleUItestUITests: XCTestCase {
          alert.buttons["Allow"].tap()
          return true
          } */
-    }
+    } */
     
 }
 class BaseTestCase: XCTestCase {
